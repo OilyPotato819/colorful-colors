@@ -12,8 +12,10 @@ function randomInt(low, high) {
 
 // Return a random rgb color- 'rgb(__, __, __)'
 function randomRGB() {
-  return `rgb(${randomInt(0, 256)}, ${randomInt(0, 256)}, ${randomInt(
-    0,
-    256
-  )})`;
+  return `rgb(${randomInt(0, 256)}, ${randomInt(0, 256)}, ${randomInt(0, 256)})`;
+}
+
+// Returns a random array element
+function randomElement(anArray) {
+  return anArray[randomInt(0, colors.length)];
 }
